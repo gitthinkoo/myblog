@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1>sign in</h1>
+        <form action="{{ url_for('login') }}" method="POST" name="login">
+            <p><input type="TEXT" value="username" name="username" /></p>
+            <p><input type="TEXT" value="password" name="password" /></p>
+            <p><input type="SUBMIT" value="sign in" /></p>
+        </form>
+        <p> {{ error }}</p>
+    </body>
+</html>
